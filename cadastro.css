@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(120deg, #cfcfcf, #fff)
+}
+
+.cadastro_container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro_background {
+    min-height: 350px;
+    width: 300px;
+    background-color: #303030;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastro_title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.cadastro_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro_input {
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: unset;
+    outline: none;
+    position: relative;
+    background: transparent;
+    color: #fff;
+}
+
+.cadastro_input_border {
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px;
+    background: #cfcfcf;
+    transition: .3s ease-in-out;
+}
+
+.cadastro_input_border::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-bottom: 16px;
+    background-image: linear-gradient(to right, #22e355, #194a26);
+    transition: .3s ease-in-out;
+}
+
+.cadastro_input:focus + .cadastro_input_border::after {
+    width: 100%;
+}
+
+.cadastro_submit {
+    height: 50px;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #22e355, #194a26);
+    opacity: 0.8;
+    font-weight: 400px;
+    transition: .4s ease-in-out;
+    color: #fff;
+    border: unset;
+    outline: none;
+    width: 100%;
+}
+
+.cadastro_submit:hover {
+    opacity: 1;
+}
